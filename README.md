@@ -1,6 +1,6 @@
 # Group Aidan : Track A, TurtleBot3 navigation and ArUco docking (MuJoCo)
 
-**Members:** Aidan 25918525   **Video:** [<YouTube unlisted link>](https://youtu.be/La9iTg0fb1c)
+**Members:** Aidan 25918525   **Video:** https://youtu.be/La9iTg0fb1c
 
 ## Run it
 ```
