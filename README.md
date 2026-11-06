@@ -1,6 +1,6 @@
 # Group Aidan : Track A, TurtleBot3 navigation and ArUco docking (MuJoCo)
 
-**Members:** <Aidan 25918525>   **Video:** <YouTube unlisted link>
+**Members:** Aidan 25918525   **Video:** [<YouTube unlisted link>](https://youtu.be/La9iTg0fb1c)
 
 ## Run it
 ```
@@ -15,10 +15,6 @@ python run.py      # about 3 minutes: prints analysis, saves results.txt and res
 | `world.py` | MuJoCo room and robot, wheel encoders, 360-beam LiDAR (`mj_multiRay`), camera range/bearing, noise calibration |
 | `control.py` | smooth path, error model, LQR/LQI (Bryson's rule), LiDAR avoidance layer |
 | `run.py` | experiments, analysis, figure |
-
-**Platform note:** this is my own TurtleBot3-style MuJoCo model, NOT the course scene. The camera returns range/bearing to markers
-directly (no image rendering). Re-point `world.py` to the course scene when available.
-Ground truth (`Robot.pose`) is read only in `run.py`'s logging block and in the `true_state` baseline.
 
 ## Design
 * **Model (A):** state `[x, y, theta]`, input `(v, w)`. Error model `e_y' = v e_theta`, `e_theta' = w - v kappa`. Controllability and observability ranks are in `results.txt`.
@@ -47,7 +43,7 @@ no_lidar       0.05    0.95      2.1      1.0       2.1       -0.2         6.2  
 * <Explain in your words why LQI barely beats LQR here: many markers keep correcting position.>
 
 ## Contributions
-| Aidan | Coded everything |
+Aidan | Coded everything
 
 ## Generative AI declaration
 Google Gemini was used to generalise and explain the thought process behind the production on the assesment in general. It did not write a line of code.
